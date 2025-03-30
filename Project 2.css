@@ -1,0 +1,549 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    
+}
+header{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+nav {
+    background-color:sienna;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 97%;
+    position: fixed;
+    left: 15px;
+    top: 20px;
+    border-radius: 25px;
+    z-index: 999;
+}
+nav img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+nav h1 {
+    font-size: 45px;
+}
+nav .subNav {
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+    transition: 2s;
+}
+nav .subNav a {
+   transition: all 1s;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+nav .subNav a:hover {
+    background-color:rgba(66, 16, 16, 0.603);
+}
+.menu{
+    font-size: 28px;
+   display: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+input:checked~.subNav{
+    background-color:rgb(6, 84, 148);
+    left: 0%;
+}
+input{
+    display: none;
+}
+.box{
+    height: 700px;
+    width: 100%;
+    border:0px;
+    position: relative;
+    
+}
+video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  filter: brightness(30%);
+}
+.bh2{
+    position: absolute;
+    top:150px;
+    left: 80px;
+    border: 1px solid orange;
+    display: block;
+    color: white;
+    padding: 10px;}
+.bh1{
+    font-size: 80px;
+    position: absolute;
+    top:240px;
+    left: 80px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color:white ;
+    color: transparent;
+    width: 80%;
+}
+.boxfooter{
+    position: absolute;
+    top:430px;
+    left: 50px;
+    height: 250px;
+    width: 90%;
+    border: 0px;
+}
+.i1{
+    font-size: 130px;
+    color: rgb(1, 58, 104);
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+.h31{
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    top:50px;
+    left: 100px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p1{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 130px;
+    left: 100px;
+}
+.i2{
+    font-size: 130px;
+    color: rgb(1, 58, 104);
+    position: absolute;
+    top:50px;
+    left:350px;
+}
+.h32{
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    top:50px;
+    left:400px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p2{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 130px;
+    left: 400px;
+}
+.i3{
+    font-size: 130px;
+    color: rgb(1, 58, 104);
+    position: absolute;
+    top:50px;
+    left:650px;
+}
+.h33{
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    top:50px;
+    left: 690px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p3{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 130px;
+    left: 700px;
+}
+.i4{
+    font-size: 130px;
+    color: rgb(1, 58, 104);
+    position: absolute;
+    top:50px;
+    left:950px;
+}
+.h34{
+    position: absolute;
+    font-size: 80px;
+    color: white;
+    top:50px;
+    left: 1000px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p4{
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 130px;
+    left: 1000px;
+}
+aside{
+    height: 600px;
+    width: 100%;
+    background-color:rgb(236, 232, 232);
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    
+}
+aside div{
+        height:500px;
+        width: 100%;
+        border:0px;
+        margin-left: 50px;
+        display: grid;
+        justify-content: start;
+        grid-template-areas: 'a1 a3 '
+                          'a2 a3 ';
+        }
+aside img:first-child{
+    grid-area: a1;
+    height: 290px;
+    width: 250px;
+    margin:0px 15px 10px;
+    filter: brightness(30%);
+}
+aside img:nth-child(2){
+    grid-area: a2;
+    height: 200px;
+    width: 250px;
+    margin:0px 15px;
+    filter: brightness(30%);
+}
+aside img:last-child{
+    grid-area: a3;
+    height: 500px;
+    width: 350px;
+    margin-left: 0px;
+    filter: brightness(30%);
+}
+article{
+    height: 390px;
+    width: 50%;
+    background-color: rgb(156, 69, 19);
+    position: absolute;
+    top:110px;
+    right: 100px;
+    padding: 40px 20px 30px 35px;
+    color: white;
+    animation-name: a1;
+    animation-duration: 2s;
+    transform: translateX(700px);
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+article h1{
+    font-size: 40px;
+    margin: 20px 0px 20x 0px;
+    
+}
+article p{
+    margin: 25px 10px 30px 0px;
+}
+article button{
+    background-color: rgb(97, 14, 14);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 15px;
+}
+main{
+    height: 550px;
+    background-image: url("./car3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.7);
+}
+.main{
+    height: 500px;
+    width: 100%;
+    border: 0px;
+    padding: 15px;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color:transparent;
+   
+    display: grid;
+    grid-template-columns: auto auto auto;
+    opacity: 1;
+}
+.main div{
+    height: 230px;
+    width: 300px;
+    background-color: peru;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    border-radius: 20px;
+    
+}
+.main i{
+    font-size: 40px;
+    margin:10px 0px 20px 0px;
+}
+.company{
+    height: 350px;
+    width:100%;
+    border: 0px;
+    display: grid;
+    
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto auto;
+    
+}
+.company1{
+    height:200px;
+    width: 250px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    position: relative;
+}
+.companyi1{
+    font-size:60px;
+    color:gold;
+    position: absolute;
+    top:80px;
+    left: 100px;
+    z-index: -1;
+}
+
+.review{
+    height: 600px;
+    width: 100%;
+    background-image: url("./car3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    padding: 30px;
+    color:white;
+    opacity: 0.8;
+    text-align: center;
+    font-family: Rokkitt, serif;
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.7);
+}
+.review1{
+    height: 450px;
+    width: 85%;
+    border: 0px;
+    margin-left: 100px;
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 40px;
+}
+.review1 div{
+    height: 350px;
+    width: 350px;
+    border: 0px;
+    background-color: peru;
+    position: relative;
+    border-radius: 0px 40px 0px 40px;
+    /* opacity: 0.8; */
+    text-align: center;
+    padding: 45px;
+}
+.reviewdiv1{
+    animation-name: div1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform: translatex(-500px);
+    position: absolute;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.reviewdiv2{
+    animation-name: div2;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: absolute;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.reviewdiv3{
+    animation-name: div3;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform: translatex(500px);
+    position: absolute;   
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.revi1{
+    font-size: 30px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    color:white;
+    background-color:rgb(61, 7, 7);
+    padding: 13px;
+    position:absolute;
+    top:-30px;
+    left:135px;
+    opacity: 0;
+    animation-name: rtop1;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    transform: translateY(-350px);
+    animation-timeline: view();
+    animation-range: entry 0 cover 50%;
+}
+.review img{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -40px;
+    left: 125px;
+    opacity: 1;
+    animation-name: rbom1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    transform: translateY(350px);
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.container-fluid{
+    height: 400px;
+    background-color: rgb(236, 232, 232);
+    color: rgb(82, 81, 81);
+}
+.container-fluid h1{
+    font-family: Rokkitt, serif;
+}
+.container-fluid i{
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 20px;
+    padding: 14px;
+}
+footer{
+    background-image: url("./car6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    filter: brightness(80%);
+}
+.footer1{
+    
+    background-color:rgba(68, 35, 35, 0.753);
+    opacity: 1;
+    color: white;
+}
+.footer2{
+    color: rgb(134, 32, 1);
+}
+.footerbtn{
+    text-decoration: none;
+    color: white;
+    
+}
+.f3{
+    background-color:transparent;
+}
+/* -------------hover-------------- */
+.i1:hover{
+    color: orange;
+    left: 130px;
+}
+.i2:hover{
+    color: orange;
+    left: 430px;
+}
+.i3:hover{
+    color: orange;
+    left: 750px;
+}
+.i4:hover{
+    color: orange;
+    left: 1050px;
+}
+aside img:first-child:hover{
+    filter: brightness(100%);
+}
+aside img:nth-child(2):hover{
+    filter: brightness(100%);
+}
+aside img:last-child:hover{
+    filter: brightness(100%);
+}
+.main div:hover{
+    height: 250px;
+    width: 320px;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.main div:hover i{
+    font-size: 60px;
+}
+.company1:hover img{
+    filter: brightness(30%);
+}
+.company1:hover .companyi1{
+    z-index: 1;
+}
+@keyframes a1 {
+    100%{transform: translatex(0px);}
+}
+@keyframes rtop1{
+    100%{opacity: 1;transform: translateY(0px);}
+}
+@keyframes rbom1{
+    100%{transform: translatey(0px);}
+}
+@keyframes div1{
+    100%{transform: translatex(0px);}
+}
+@keyframes div2{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{ opacity: 1;}
+}
+@keyframes div3{
+    100%{transform: translatex(0);}
+}
